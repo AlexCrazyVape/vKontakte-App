@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		3983851924867D0900CB20C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983851824867D0900CB20C7 /* AppDelegate.swift */; };
 		3983851B24867D0900CB20C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983851A24867D0900CB20C7 /* SceneDelegate.swift */; };
-		3983851D24867D0900CB20C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983851C24867D0900CB20C7 /* ViewController.swift */; };
+		3983851D24867D0900CB20C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983851C24867D0900CB20C7 /* LoginViewController.swift */; };
 		3983852024867D0900CB20C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983851E24867D0900CB20C7 /* Main.storyboard */; };
 		3983852224867D0B00CB20C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3983852124867D0B00CB20C7 /* Assets.xcassets */; };
 		3983852524867D0B00CB20C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983852324867D0B00CB20C7 /* LaunchScreen.storyboard */; };
-		3983852D248682B500CB20C7 /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983852C248682B500CB20C7 /* 1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3983851524867D0900CB20C7 /* vKontakte-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vKontakte-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3983851824867D0900CB20C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3983851A24867D0900CB20C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3983851C24867D0900CB20C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3983851C24867D0900CB20C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3983851F24867D0900CB20C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3983852124867D0B00CB20C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3983852424867D0B00CB20C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3983852624867D0B00CB20C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3983852C248682B500CB20C7 /* 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +58,11 @@
 			children = (
 				3983851824867D0900CB20C7 /* AppDelegate.swift */,
 				3983851A24867D0900CB20C7 /* SceneDelegate.swift */,
-				3983851C24867D0900CB20C7 /* ViewController.swift */,
+				3983851C24867D0900CB20C7 /* LoginViewController.swift */,
 				3983851E24867D0900CB20C7 /* Main.storyboard */,
 				3983852124867D0B00CB20C7 /* Assets.xcassets */,
 				3983852324867D0B00CB20C7 /* LaunchScreen.storyboard */,
 				3983852624867D0B00CB20C7 /* Info.plist */,
-				3983852C248682B500CB20C7 /* 1.swift */,
 			);
 			path = "vKontakte-App";
 			sourceTree = "<group>";
@@ -141,10 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3983851D24867D0900CB20C7 /* ViewController.swift in Sources */,
+				3983851D24867D0900CB20C7 /* LoginViewController.swift in Sources */,
 				3983851924867D0900CB20C7 /* AppDelegate.swift in Sources */,
 				3983851B24867D0900CB20C7 /* SceneDelegate.swift in Sources */,
-				3983852D248682B500CB20C7 /* 1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
