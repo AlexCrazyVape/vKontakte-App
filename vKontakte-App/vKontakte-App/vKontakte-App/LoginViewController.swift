@@ -9,7 +9,14 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    
+    @IBOutlet var loginTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    }
+    
     override func loadView() {
         super.loadView()
     }
