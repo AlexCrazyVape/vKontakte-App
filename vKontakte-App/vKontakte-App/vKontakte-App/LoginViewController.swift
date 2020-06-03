@@ -14,8 +14,36 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var switchButton: UISwitch!
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let login = loginTextField.text!
+        let password = passwordTextField.text!
+        
+        if login == "1" && password == "1" {
+            return true
+        } else {
+            // Создаем контроллер
+            let alert = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+            // Создаем кнопку для UIAlertController
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            // Добавляем кнопку на UIAlertController
+            alert.addAction(action)
+            // Показываем UIAlertController
+            present(alert, animated: true, completion: nil)
+            
+            return false
+        }
+    }
+    @IBAction func showPassword(_ sender: UISwitch) {
+        if switchButton.isOn {
+            passwordTextField.isSecureTextEntry = false
+        } else {
+            passwordTextField.isSecureTextEntry = true
+        }
     }
     
     override func loadView() {
@@ -61,14 +89,12 @@ class LoginViewController: UIViewController {
         
         let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
         scrollView.contentInset = contentInsets
-        scrollView.scrollIndicatorInsets = contentInsets
     }
     
     @objc private func keyboardWasHidden(notification: Notification) {
         
         let contentInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInsets
-        scrollView.scrollIndicatorInsets = contentInsets
     }
 }
 
